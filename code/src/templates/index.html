@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regulatory Compliance AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Integrated Platform Support Environment</h1>
+
+    <!-- File Upload -->
+    <div class="section">
+        <h2>Upload Document</h2>
+        <form action="/upload-document" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".pdf" required>
+            <button type="submit">Upload PDF</button>
+        </form>
+        {% if upload_status %}
+        <p class="status">{{ upload_status }}</p>
+        {% endif %}
+    </div>
+
+    <!-- Question Form -->
+    <div class="section">
+        <h2>Ask a Question</h2>
+        <form action="/ask" method="post">
+            <textarea name="question" placeholder="Enter your regulatory question..." required>{{ question }}</textarea>
+            <button type="submit">Ask</button>
+        </form>
+        {% if answer %}
+        <div class="answer">
+            <h3>Answer:</h3>
+            <p>{{ answer }}</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+</body>
+</html>
