@@ -2,8 +2,7 @@ Gen AI Integrated Platform Environment: This solution is based on having a commo
 
 
 🎥 Demo
-🔗 Live Demo (if applicable)
-📹 Video Demo (if applicable)
+demo is aatached as zip file under demo folder
 🖼️ Screenshots:
 
 Screenshot 1
